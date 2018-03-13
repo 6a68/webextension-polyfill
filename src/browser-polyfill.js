@@ -369,7 +369,7 @@ if (typeof browser === "undefined") {
           sendResponse(result);
         });
         if (didCallSendResponse || result === true) {
-          return result;
+          return;
         }
 
         if (isThenable(result)) {
